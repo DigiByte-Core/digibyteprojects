@@ -37,7 +37,7 @@ end
 
 Given(/^I add the user with email "(.*?)" through his identifier to the recipients$/) do |arg1|
   user = User.find_by(email: arg1)
-  within ".panel", text: "Prime4commit user" do
+  within ".panel", text: "Digis4commit user" do
     find("input:enabled").set(user.identifier)
     click_on "Add"
   end
@@ -166,7 +166,7 @@ end
 
 When(/^I set my address to "(.*?)"$/) do |arg1|
   step 'I go to edit my profile'
-  fill_in "Primecoin address", with: arg1
+  fill_in "DigiByte address", with: arg1
   if has_field?("Current password")
     fill_in "Current password", with: "password"
   end
@@ -193,7 +193,7 @@ Then(/^the email should include a link to the last distribution$/) do
 end
 
 When(/^I visit the link to set my password and address from the email$/) do
-  step "I click on the \"Set your password and Primecoin address\" link in the email"
+  step "I click on the \"Set your password and DigiByte address\" link in the email"
 end
 
 Then(/^the user with email "(.*?)" should have "(.*?)" as password$/) do |arg1, arg2|

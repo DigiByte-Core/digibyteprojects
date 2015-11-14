@@ -5,12 +5,12 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %meta{content: "", name: "description"}/
     %meta{content: "", name: "author"}/
-    %link{href: image_path("primecoin.png"), rel: "shortcut icon"}/
+    %link{href: image_path("digibyte.png"), rel: "shortcut icon"}/
     
-    %title= content_for?(:title) ? yield(:title) : "Prime4commit"
+    %title= content_for?(:title) ? yield(:title) : "Digis4commit"
 
-    %meta{name: 'description', content: (content_for?(:title) ? yield(:title) : "Donate primecoins to open source projects or make commits and get tips for it.")}
-    %meta{name: 'keywords', content: 'open source,contribute,github,community,git,bitcoin,primecoin,xpm,tips,perks'}
+    %meta{name: 'description', content: (content_for?(:title) ? yield(:title) : "Donate digibytes to open source projects or make commits and get tips for it.")}
+    %meta{name: 'keywords', content: 'open source,contribute,github,community,git,bitcoin,digibyte,tips,perks'}
     / %meta{:property => 'og:image', :content => asset_path('logo.png')}
     / %link{:rel => 'image_src', :type => 'image/png', :href => asset_path('logo.png')}
 
@@ -32,7 +32,7 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-11108334-7', 'prime4commit.com');
+        ga('create', 'UA-11108334-7', 'digis4commit.com');
         ga('send', 'pageview');
     #top-bar
       .container
@@ -43,7 +43,7 @@
           - else
             = link_to "Sign in", new_user_session_path(return_url: request.url), class: "btn btn-default"
         %a#main-logo{href: root_path}
-          %h3 Prime4commit
+          %h3 Digis4commit
         = render 'common/menu'
         = render_flash_message
     #main-content
@@ -58,12 +58,10 @@
         .footer
           %p
             ©
-            = link_to 'Prime4commit', 'http://prime4commit.com/', target: '_blank'
-            2014. Source code is available at #{link_to('github', 'https://github.com/sigmike/prime4commit', target: '_blank')},
-            based on #{link_to "Peer4commit", "http://peer4commit.com/"} and #{link_to "Tip4commit", "http://tip4commit.com/"}.
+            = link_to 'Digis4commit', 'http://digis4commit.com/', target: '_blank'
+            2014. Source code is available at #{link_to('github', 'https://github.com/digibyte/digis4commit', target: '_blank')},
+            based on #{link_to "Tip4commit", "http://tip4commit.com/"}.
             You can support its development with
-            = link_to('peercoins', 'http://peer4commit.com/projects/16')
-            or
             = link_to('bitcoins', 'http://tip4commit.com/projects/615')
     / /container
     /

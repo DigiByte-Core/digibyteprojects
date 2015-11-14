@@ -6,8 +6,8 @@ daemon:
   username: rpcuser
   password: rpcpassword
   host: localhost
-  port: 9914
-  path: /path/to/primecoin/src/primecoind
+  port: 14022
+  path: /path/to/digibyte/src/digibyted
 
 devise:
   secret: "111111111111"
@@ -35,12 +35,12 @@ exception_email: admin@example.com # an email will be sent to this address if an
 #   host: errbit.tip4commit.com
 
 tip: 0.01
-min_payout: 1.0 # in XPM
+min_payout: 1.0 # in DGB
 our_fee: 0.05
 tipper_delay: "1.hour"
 
-address_versions: # 23/83 for primecoin, 111/196 for testnet, see base58.h
-  - 111
-  - 196
+address_versions: # 23/83 for digibyte, 111/196 for testnet, see base58.h
+  - 30
+  - 5
 
-# canonical_host: prime4commit.example.com # will redirect all other hostnames to this one
+# canonical_host: digis4commit.example.com # will redirect all other hostnames to this one

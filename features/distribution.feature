@@ -1,7 +1,7 @@
 Feature: Fundraisers can distribute funds
   @javascript
   Scenario: Send distribution to a single user who has set his address
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -16,8 +16,8 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |     10 |        100 |
-    And I should see "Total amount: 10.00 XPM"
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |     10 |        100 |
+    And I should see "Total amount: 10.00 DGB"
 
     When the tipper is started
     Then no coins should have been sent
@@ -28,13 +28,13 @@ Feature: Fundraisers can distribute funds
     And I should see "Transaction sent on Sat, 01 Mar 2014 12:35:02 +0000"
     And these amounts should have been sent from the account of the project:
       | address                            | amount |
-      | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |   10.0 |
+      | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |   10.0 |
     And the project balance should be "490"
 
   @javascript
   Scenario: Send distribution to multiple users
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
-    And a GitHub user "carol" who has set his address to "mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
+    And a GitHub user "carol" who has set his address to "DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -51,9 +51,9 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |     10 |       42.4 |
-      | carol     | mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n |  13.56 |       57.6 |
-    And I should see "Total amount: 23.56 XPM"
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |     10 |       42.4 |
+      | carol     | DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4 |  13.56 |       57.6 |
+    And I should see "Total amount: 23.56 DGB"
 
     When the tipper is started
     Then no coins should have been sent
@@ -62,8 +62,8 @@ Feature: Fundraisers can distribute funds
     Then I should see "Transaction sent"
     And these amounts should have been sent from the account of the project:
       | address                            | amount |
-      | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |   10.0 |
-      | mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n |  13.56 |
+      | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |   10.0 |
+      | DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4 |  13.56 |
     And the project balance should be "476.44"
 
   @javascript
@@ -84,7 +84,7 @@ Feature: Fundraisers can distribute funds
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
       | bob       |                                    |     10 |      100.0 |
-    And I should see "Total amount: 10.00 XPM"
+    And I should see "Total amount: 10.00 DGB"
     And I should not see "Send the transaction"
     And I should see "The transaction cannot be sent because some addresses are missing"
 
@@ -127,7 +127,7 @@ Feature: Fundraisers can distribute funds
     When I save the distribution
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-    And I should see "Total amount: 0.00 XPM"
+    And I should see "Total amount: 0.00 DGB"
 
   @javascript
   Scenario: Send to an user without an address
@@ -147,7 +147,7 @@ Feature: Fundraisers can distribute funds
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
       | bob       |                                    |     10 |      100.0 |
-    And I should see "Total amount: 10.00 XPM"
+    And I should see "Total amount: 10.00 DGB"
     And I should not see "Send the transaction"
     And I should see "The transaction cannot be sent because some addresses are missing"
 
@@ -186,7 +186,7 @@ Feature: Fundraisers can distribute funds
 
   @javascript
   Scenario: Edit a distribution
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -201,10 +201,10 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |     10 |        100 |
-    And I should see "Total amount: 10.00 XPM"
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |     10 |        100 |
+    And I should see "Total amount: 10.00 DGB"
 
-    Given a GitHub user "carol" who has set his address to "mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n"
+    Given a GitHub user "carol" who has set his address to "DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4"
 
     And I click on "Edit"
     And I fill the amount to "bob" with "15"
@@ -214,20 +214,20 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |     15 |       75.0 |
-      | carol     | mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n |      5 |       25.0 |
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |     15 |       75.0 |
+      | carol     | DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4 |      5 |       25.0 |
 
     When I click on "Send the transaction"
     Then I should see "Transaction sent"
     And these amounts should have been sent from the account of the project:
       | address                            | amount |
-      | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |   15.0 |
-      | mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n |    5.0 |
+      | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |   15.0 |
+      | DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4 |    5.0 |
     And the project balance should be "480"
 
   @javascript
   Scenario: Send distribution with a comment
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -243,7 +243,7 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | reason     | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 | Great idea |     10 |        100 |
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A | Great idea |     10 |        100 |
 
 
   Scenario: Send multiple times to the same recipient
@@ -282,7 +282,7 @@ Feature: Fundraisers can distribute funds
 
   @javascript
   Scenario: Create distribution line without an amount
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -301,7 +301,7 @@ Feature: Fundraisers can distribute funds
 
   @javascript
   Scenario: Send too much funds
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -317,7 +317,7 @@ Feature: Fundraisers can distribute funds
 
   @javascript
   Scenario: Send all the funds
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -335,13 +335,13 @@ Feature: Fundraisers can distribute funds
     Then I should see "Transaction sent"
     And these amounts should have been sent from the account of the project:
       | address                            | amount |
-      | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |  500.0 |
+      | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |  500.0 |
     And the project balance should be "0.00"
 
   @javascript
   Scenario: Send 0 amount in a distribution
-    Given a GitHub user "bob" who has set his address to "mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1"
-    And a GitHub user "carol" who has set his address to "mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n"
+    Given a GitHub user "bob" who has set his address to "DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A"
+    And a GitHub user "carol" who has set his address to "DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4"
 
     Given a project managed by "alice"
     And our fee is "0"
@@ -358,9 +358,9 @@ Feature: Fundraisers can distribute funds
 
     Then I should see these distribution lines:
       | recipient | address                            | amount | percentage |
-      | bob       | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |     10 |      100.0 |
-      | carol     | mi9SLroAgc8eUNuLwnZmdyqWdShbNtvr3n |      0 |        0.0 |
-    And I should see "Total amount: 10.00 XPM"
+      | bob       | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |     10 |      100.0 |
+      | carol     | DR4jYwgg7ey6d9cJhe7Da2k5cQ2XCQzeg4 |      0 |        0.0 |
+    And I should see "Total amount: 10.00 DGB"
 
     When the tipper is started
     Then no coins should have been sent
@@ -369,6 +369,6 @@ Feature: Fundraisers can distribute funds
     Then I should see "Transaction sent"
     And these amounts should have been sent from the account of the project:
       | address                            | amount |
-      | mxWfjaZJTNN5QKeZZYQ5HW3vgALFBsnuG1 |   10.0 |
+      | DJcDo7G9WbRFTF2kTvL3zECrRFxz7q2c4A |   10.0 |
     And the project balance should be "490"
 

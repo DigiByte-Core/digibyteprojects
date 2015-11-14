@@ -7,7 +7,7 @@ module ApplicationHelper
     precision = options[:precision] || 2
     display_currency = options.fetch(:display_currency, true)
     btc = "%.#{precision}f" % to_btc(amount)
-    btc += " XPM" if display_currency
+    btc += " DGB" if display_currency
     btc = "<span class='convert-from-btc' data-to='#{currency.upcase}'>#{btc}</span>" if currency
     btc = "<nobr>#{btc}</nobr>" if nobr
     btc.html_safe
@@ -26,16 +26,16 @@ module ApplicationHelper
   end
 
   def transaction_url(txid)
-    "https://coinplorer.com/XPM/Transactions/#{txid}"
+    "http://digiexplorer.info/tx/#{txid}"
   end
 
   def address_explorers
-    [:coinplorer]
+    [:digiexplorer]
   end
 
   def address_url(address, explorer = address_explorers.first)
     case explorer
-    when :coinplorer then "https://coinplorer.com/XPM/Addresses/#{address}"
+    when :digiexplorer then "http://digiexplorer.info/address/#{address}"
     else raise "Unknown provider: #{provider.inspect}"
     end
   end
