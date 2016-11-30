@@ -19,6 +19,6 @@
             %td.name
               %strong= link_to project.name, project
             %td.description= project.description
-            %td.amount= btc_human project.available_amount_cache
+            %td.amount= btc_human project.available_amount
             %td.actions= link_to 'Details', project, class: 'btn btn-default btn-sm'
     = paginate @projects
