@@ -1,7 +1,7 @@
 Digis4Commits
 ==========
 
-[![DigiByte tip for next commit](http://peer4commit.com/projects/16.svg)](http://peer4commit.com/projects/16)
+[![DigiByte tip for next commit](http://Digis4Commits.com/projects/16.svg)](http://Digis4Commits.com/projects/16)
 
 
 Donate digibytes to open source projects or make commits and get tips for it.
@@ -77,6 +77,6 @@ License
 
 [MIT License](https://github.com/sigmike/Digis4Commits/blob/master/LICENSE)
 
-Based on [peer4commit](http://peer4commit.com/), [MIT License](https://github.com/sigmike/peer4commit/blob/master/LICENSE), copyright (c) 2014 sigmike
+Based on [Digis4Commits](http://Digis4Commits.com/), [MIT License](https://github.com/sigmike/Digis4Commits/blob/master/LICENSE), copyright (c) 2014 sigmike
 
 Which is based on [Tip4commit](http://tip4commit.com/), [MIT License](https://github.com/tip4commit/tip4commit/blob/master/LICENSE), copyright (c) 2013-2014 tip4commit

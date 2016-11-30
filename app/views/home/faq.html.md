@@ -73,9 +73,9 @@ Digis4Commits is still young but yes. Some projects were successfully managed.
 We initially started as a [tip4commit](http://tip4commit.com/) clone where GitHub commits were automatically rewarded 1% of the balance. We moved recently to the more generic system described here.
 
 Examples of successful projects:
-* [Peer4commit](http://peer4commit.com/projects/1) itself
-* [A DigiByte marketing video](http://peer4commit.com/projects/68)
-* [Peerunity](http://peer4commit.com/projects/74)
+* [Digis4Commits](http://Digis4Commits.com/projects/1) itself
+* [A DigiByte marketing video](http://Digis4Commits.com/projects/68)
+* [Peerunity](http://Digis4Commits.com/projects/74)
 
 Currency
 --------
@@ -86,7 +86,7 @@ How can I raise funds?
 ----------------------
 Click on the <%= link_to '"Create a project"', new_project_path %> button. You'll have to fill a detailed description. Here are some recommendations:
 
-* State the main goal of your peer4commit project, and decide what can and cannot be changed for the project. The main goal cannot be changed.
+* State the main goal of your Digis4Commits project, and decide what can and cannot be changed for the project. The main goal cannot be changed.
 * Provide your identity and convince donators why they should trust you.
 * Decide and state if you will be a benevolent dictator (more efficient), or create a more democratic project (finer control for stakeholders).
 * Describe your techical skills and other relevant qualifications if they are needed to evaluate the work made by others.
@@ -159,5 +159,5 @@ When multisignatures are implemented Digis4Commits will not have direct the cont
 
 Contact
 -------
-If you have any question send a message to <%= mail_to "contact@peer4commit.com" %> or [open an issue on GitHub](https://github.com/sigmike/peer4commit/issues/new).
+If you have any question send a message to <%= mail_to "contact@Digis4Commits.com" %> or [open an issue on GitHub](https://github.com/sigmike/Digis4Commits/issues/new).
 
