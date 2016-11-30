@@ -20,9 +20,6 @@
         = f.text_field :sender_address, label: 'Return address'
         = f.submit "Generate my donation address"
       %hr
+      %pre= @project.bitcoin_address
+      .qrcode.centered{data: {qrcode: "digibyte:#{@project.bitcoin_address}"}}
       %p If you want to donate without providing a return address, you can just send DigiBytes to this address: #{@project.bitcoin_address}
-
-        %p
-          %pre= @project.bitcoin_address
-          .qrcode.centered{data: {qrcode: "digibyte:#{@project.bitcoin_address}"}}
-        %p
