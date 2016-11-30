@@ -74,7 +74,7 @@ We initially started as a [tip4commit](http://tip4commit.com/) clone where GitHu
 
 Examples of successful projects:
 * [Peer4commit](http://peer4commit.com/projects/1) itself
-* [A Peercoin marketing video](http://peer4commit.com/projects/68)
+* [A DigiByte marketing video](http://peer4commit.com/projects/68)
 * [Peerunity](http://peer4commit.com/projects/74)
 
 Currency
@@ -109,7 +109,7 @@ Check the policies of the projects. Fundraiser can chose to raise bounty or a sp
 
 How do I donate to a project I like?
 ------------------------------------
-Browse the project list and click on the "Donate" button. You will be asked for a personal address that will be used if Digis4Commits or the fundraiser ever needs to identify you. Then Digis4Commits will give you an address to which you just have to send Peercoins. 99% of your donation will be available to the fundraiser. 1% will be kept to host Digis4Commits and pay the transaction fees.
+Browse the project list and click on the "Donate" button. You will be asked for a personal address that will be used if Digis4Commits or the fundraiser ever needs to identify you. Then Digis4Commits will give you an address to which you just have to send DigiBytes. 99% of your donation will be available to the fundraiser. 1% will be kept to host Digis4Commits and pay the transaction fees.
 
 You can also donate without providing an address. But the fundraiser won't be able to return you the funds if he ever wants to. And if the fundraiser organizes a vote or send rewards, you won't be able to participate.
 
@@ -118,7 +118,7 @@ What's going to happen next?
 There are many features planed. Their achievement depends on the willingness of donors, fundraisers and developers.
 
 ### Bitcoin support
-Adding support for Bitcoin is an important step. We can easily change Digis4Commits to support projects either in Bitcoin or in Peercoin. But supporting multiple currecies in the same project will require more work and an external service to automatically convert currencies.
+Adding support for Bitcoin is an important step. We can easily change Digis4Commits to support projects either in Bitcoin or in DigiByte. But supporting multiple currecies in the same project will require more work and an external service to automatically convert currencies.
 
 ### Multi-signature
 The most important imminent change is the introduction of multi-signature donation addresses:
@@ -153,7 +153,7 @@ We may also add some kind of discussion boards, unless the community thinks this
 
 What measures have been taken to secure the funds on Digis4Commits?
 -----------------------------------------------------------------
-The project funds are isolated in different accounts in the wallet, so if someone ever finds a way to distribute more funds than the project balance, Peercoin will not take the funds from another project and will refuse the transaction. Projects with a high balance have a part of its funds moved to cold storage. The website runs in an isolated virtual server running only this service. There's an <%= link_to "audit page", audit_path %> that shows the status of all project accounts.
+The project funds are isolated in different accounts in the wallet, so if someone ever finds a way to distribute more funds than the project balance, DigiByte will not take the funds from another project and will refuse the transaction. Projects with a high balance have a part of its funds moved to cold storage. The website runs in an isolated virtual server running only this service. There's an <%= link_to "audit page", audit_path %> that shows the status of all project accounts.
 
 When multisignatures are implemented Digis4Commits will not have direct the control over the funds (see above).
 

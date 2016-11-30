@@ -1,7 +1,7 @@
 Digis4Commits
 ==========
 
-[![peercoin tip for next commit](http://peer4commit.com/projects/16.svg)](http://peer4commit.com/projects/16)
+[![DigiByte tip for next commit](http://peer4commit.com/projects/16.svg)](http://peer4commit.com/projects/16)
 
 
 Donate digibytes to open source projects or make commits and get tips for it.

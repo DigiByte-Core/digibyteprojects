@@ -200,7 +200,7 @@ Then(/^the user with email "(.*?)" should have "(.*?)" as password$/) do |arg1, 
   User.find_by(email: arg1).valid_password?(arg2).should eq(true)
 end
 
-Then(/^the user with email "(.*?)" should have "(.*?)" as peercoin address$/) do |arg1, arg2|
+Then(/^the user with email "(.*?)" should have "(.*?)" as DigiByte address$/) do |arg1, arg2|
   User.find_by(email: arg1).bitcoin_address.should eq(arg2)
 end
 
