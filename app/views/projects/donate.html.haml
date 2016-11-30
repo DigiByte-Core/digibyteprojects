@@ -21,3 +21,6 @@
         = f.submit "Generate my donation address"
       %hr
       %p If you want to donate without providing a return address, you can just send DigiBytes to this address: %strong#{@project.bitcoin_address}
+
+        %pre= @project.bitcoin_address
+          .qrcode.centered{data: {qrcode: "bitcoin:#{@project.bitcoin_address}"}}
