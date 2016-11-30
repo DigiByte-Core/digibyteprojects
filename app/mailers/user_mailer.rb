@@ -10,7 +10,7 @@ class UserMailer < ActionMailer::Base
 
   def security_issue(user)
     @user = user
-    mail to: user.email, subject: "Security issue on digis4commit.com"
+    mail to: user.email, subject: "Security issue on Digis4Commits.com"
   end
 
   def address_request(tip, collaborator)

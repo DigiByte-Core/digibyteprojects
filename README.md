@@ -1,4 +1,4 @@
-Digis4commit
+Digis4Commits
 ==========
 
 [![peercoin tip for next commit](http://peer4commit.com/projects/16.svg)](http://peer4commit.com/projects/16)
@@ -6,12 +6,12 @@ Digis4commit
 
 Donate digibytes to open source projects or make commits and get tips for it.
 
-Official site: http://digis4commit.com/
+Official site: http://Digis4Commits.com/
 
 Development
 ===========
 
-To run digis4commit in development mode follow these instructions:
+To run Digis4Commits in development mode follow these instructions:
 
 * Install [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
 
@@ -24,8 +24,8 @@ gem install bundler
 
 * Clone the repository
 ```
-git clone git@github.com:sigmike/digis4commit.git
-cd digis4commit
+git clone git@github.com:sigmike/Digis4Commits.git
+cd Digis4Commits
 ```
 
 * Install the sqlite3 development libraries
@@ -75,7 +75,7 @@ To retreive commits and send tips on project that do not hold tips:
 License
 =======
 
-[MIT License](https://github.com/sigmike/digis4commit/blob/master/LICENSE)
+[MIT License](https://github.com/sigmike/Digis4Commits/blob/master/LICENSE)
 
 Based on [peer4commit](http://peer4commit.com/), [MIT License](https://github.com/sigmike/peer4commit/blob/master/LICENSE), copyright (c) 2014 sigmike
 
