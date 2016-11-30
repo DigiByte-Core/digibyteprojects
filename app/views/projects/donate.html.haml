@@ -19,9 +19,5 @@
       = bootstrap_form_for @donation_address, url: donate_project_path(@project) do |f|
         = f.text_field :sender_address, label: 'Return address'
         = f.submit "Generate my donation address"
-
-
       %hr
-      %p If you want to donate without providing a return address, you can just send DigiBytes to this address: 
-      = "<br/>"*3
-      %strong#{@project.bitcoin_address}
+      %p If you want to donate without providing a return address, you can just send DigiBytes to this address: %strong#{@project.bitcoin_address}
