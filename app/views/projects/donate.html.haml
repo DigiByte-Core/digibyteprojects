@@ -22,4 +22,6 @@
 
 
       %hr
-      %p If you want to donate without providing a return address, you can just send DigiBytes to this address: #{@project.bitcoin_address}
+      %p If you want to donate without providing a return address, you can just send DigiBytes to this address: 
+      = "<br/>"*3
+      %strong#{@project.bitcoin_address}
