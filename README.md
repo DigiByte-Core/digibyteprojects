@@ -13,19 +13,26 @@ Development
 
 To run DigiByteProjects in development mode follow these instructions:
 
-* Install [Ruby](https://www.ruby-lang.org/en/downloads/) 2.0+
+* Install [Ruby](https://www.ruby-lang.org/en/downloads/) 2.4.1 & RVM
 
-* Install the [bundler](http://bundler.io/) gem (you may need root):
-```
-gem install bundler
-```
+apt install ruby
 
-* Install [git](http://git-scm.com/downloads)
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+source /usr/local/rvm/scripts/rvm
+rvm install "ruby-2.4.1"
 
 * Clone the repository
 ```
-git clone git@github.com:digibte/digibyteprojects.git
-cd DigiByteProjects
+git clone https://github.com/digibyte/digibyteprojects.git
+cd digibyteprojects/
+```
+* Install the [bundler](http://bundler.io/) gem (you may need root):
+```
+gem install bundler
+sudo apt-get install libmysql-ruby libmysqlclient-dev
+sudo apt-get install libmysqlclient-dev
 ```
 
 * Install the sqlite3 development libraries
