@@ -1,6 +1,6 @@
 module BalanceUpdater
-  def self.work
-    Project.all.each do |project|
+  def self.work(projects = Project.all)
+    projects.each do |project|
       start = 0
       count = 10
 
@@ -8,12 +8,12 @@ module BalanceUpdater
 
       project.update(account_balance: (BitcoinDaemon.instance.get_balance(project.address_label) * COIN).to_i)
 
-      next if project.disabled?
-
       if project.cold_storage_withdrawal_address.blank?
         new_address = BitcoinDaemon.instance.get_new_address(project.address_label)
         project.update!(cold_storage_withdrawal_address: new_address)
       end
+
+      stake_mint = 0
 
       loop do
         transactions = BitcoinDaemon.instance.list_transactions(project.address_label, count, start)
@@ -25,13 +25,17 @@ module BalanceUpdater
           category = transaction["category"]
           fee = transaction["fee"]
 
+          if category == "move"
+            next
+          end
+
           if category == "send" and distribution = Distribution.where(txid: txid).first
             raise "No fee on distribution #{distribution.inspect}" unless fee
             distribution.update(fee: -fee * COIN)
             next
           end
 
-          if deposit = Deposit.find_by_txid(txid)
+          if deposit = project.deposits.find_by_txid(txid)
             deposit.update_attribute(:confirmations, confirmations)
             next
           end
@@ -52,6 +56,17 @@ module BalanceUpdater
           cold_storage_withdrawal_address = project.cold_storage_withdrawal_address
 
           amount = (transaction["amount"].to_d * COIN).to_i
+
+          if %w( stake-mint stake ).include?(category)
+            # When a block is found, peercoin seems to debit the default account ("") and credit the account associated with the address.
+            # So we record these false amounts to remove them in the audit page
+            stake_mint += amount
+            next
+          end
+
+          if category == "stake-orphan"
+            next
+          end
 
           if address == cold_storage_withdrawal_address
             if category != "receive"
@@ -105,6 +120,8 @@ module BalanceUpdater
 
           raise "Unexpected transaction: #{transaction.inspect}"
         end
+
+        project.update(stake_mint_amount: stake_mint)
 
         break if transactions.size < count
         start += count
