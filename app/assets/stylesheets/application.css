@@ -12,8 +12,7 @@
  *= require_self
  *= require_tree .
  */
- @import "main";
- @import "bootstrap";
+
 
 @font-face {font-family: 'Code-Pro-Light-Demo';src: url('/webfonts/28BE49_0_0.eot');src: url('/webfonts/28BE49_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/28BE49_0_0.woff') format('woff'),url('/webfonts/28BE49_0_0.ttf') format('truetype');}
 .code-pro { font-family: Code-Pro-Light-Demo; }
