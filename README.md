@@ -49,7 +49,7 @@ cp config/database.yml{.sample,}
 
 * Create `config.yml`
 ```
-cp config/config.yml{.example,}
+cp config/config.yml{.sample,}
 ```
 
 * Edit `config.yml`
