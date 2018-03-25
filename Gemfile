@@ -9,7 +9,7 @@ gem 'sqlite3', group: :development
 #gem 'pg', '~> 0.20.0', group: :postgresql # fixed version to avoid warning, see https://stackoverflow.com/questions/44607324/installing-newest-version-of-rails-4-with-postgres-the-pgconn-pgresult-and-p
 
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0'
 gem 'haml-rails'
 
 # use fork to remove warning, see https://github.com/metaskills/less-rails/issues/122 and https://github.com/metaskills/less-rails/pull/137
@@ -83,6 +83,7 @@ gem 'twitter-typeahead-rails'
 gem 'commonmarker'
 gem 'commontator', '~> 4.6.0'
 gem 'compass-rails'
+gem 'puma'
 
 group :test do
   gem 'cucumber-rails', :require => false

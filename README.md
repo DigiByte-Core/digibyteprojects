@@ -8,7 +8,7 @@ Donate DigiBytes to open source projects or make commits and earn DGB.
 
 Official site: http://DigiByteProjects.org/
 
-Development
+Production - Ubuntu
 ===========
 
 To run DigiByteProjects in development mode follow these instructions:
@@ -31,8 +31,8 @@ cd digibyteprojects/
 * Install the [bundler](http://bundler.io/) gem (you may need root):
 ```
 gem install bundler
-sudo apt-get install libmysql-ruby libmysqlclient-dev
-sudo apt-get install libmysqlclient-dev
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+sudo mysql_install_db
 ```
 
 * Install the sqlite3 development libraries
@@ -56,7 +56,8 @@ cp config/config.yml{.sample,}
 
 * Initialize the database
 ```
-    bundle exec rake db:migrate
+rake db:create db:migrate RAILS_ENV=production
+bundle exec rake db:migrate
 ```
 
 * Make sure `digibyted` is running with RPC enabled
@@ -64,19 +65,21 @@ cp config/config.yml{.sample,}
 * Run the server
 
 
-    bundle exec rails server
+bundle exec rails server
+RAILS_ENV=production rake assets:precompile
+RAILS_ENV=production rails server --binding=0.0.0.0
 
 * Connect to the server at http://localhost:3000/
 
 
 To update the project balances run this command:
 ```
-    bundle exec rails runner "BalanceUpdater.work"
+bundle exec rails runner "BalanceUpdater.work"
 ```
 
 To retreive commits and send tips on project that do not hold tips:
 ```
-    bundle exec rails runner "BitcoinTipper.work"
+bundle exec rails runner "BitcoinTipper.work"
 ```
 
 License
