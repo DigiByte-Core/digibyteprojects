@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'haml-rails'
 
 # use fork to remove warning, see https://github.com/metaskills/less-rails/issues/122 and https://github.com/metaskills/less-rails/pull/137
-gem 'less-rails'
+gem 'less-rails', '~> 3.0.0'
 
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
 
