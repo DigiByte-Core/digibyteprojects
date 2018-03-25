@@ -4,7 +4,7 @@ DigiByteProjects
 [![DigiByte tip for next commit](http://DigiByteProjects.org/projects/16.svg)](http://DigiByteProjects.org/projects/16)
 
 
-Donate digibytes to open source projects or make commits and get tips for it.
+Donate DigiBytes to open source projects or make commits and earn DGB.
 
 Official site: http://DigiByteProjects.org/
 
@@ -24,7 +24,7 @@ gem install bundler
 
 * Clone the repository
 ```
-git clone git@github.com:sigmike/DigiByteProjects.git
+git clone git@github.com:digibte/digibyteprojects.git
 cd DigiByteProjects
 ```
 
@@ -52,7 +52,7 @@ cp config/config.yml{.example,}
     bundle exec rake db:migrate
 ```
 
-* Make sure `digibyte` is running with RPC enabled
+* Make sure `digibyted` is running with RPC enabled
 
 * Run the server
 

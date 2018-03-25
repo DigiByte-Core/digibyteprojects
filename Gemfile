@@ -4,6 +4,7 @@ ruby '2.4.1'
 gem 'rails', '4.2.10'
 
 # Databases
+gem 'sqlite3'
 gem 'pg', group: :postgresql
 
 # Use SCSS for stylesheets
