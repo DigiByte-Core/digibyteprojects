@@ -4,7 +4,7 @@ ruby '2.4.1'
 gem 'rails', '~> 4.2.0'
 
 # Databases
-gem 'mysql2', group: :mysql
+gem 'mysql2', '~> 0.3.18'
 gem 'sqlite3', group: :development
 #gem 'pg', '~> 0.20.0', group: :postgresql # fixed version to avoid warning, see https://stackoverflow.com/questions/44607324/installing-newest-version-of-rails-4-with-postgres-the-pgconn-pgresult-and-p
 
