@@ -1,17 +1,17 @@
-Digis4Commits
+DigiByteProjects
 ==========
 
-[![DigiByte tip for next commit](http://Digis4Commits.com/projects/16.svg)](http://Digis4Commits.com/projects/16)
+[![DigiByte tip for next commit](http://DigiByteProjects.org/projects/16.svg)](http://DigiByteProjects.org/projects/16)
 
 
 Donate digibytes to open source projects or make commits and get tips for it.
 
-Official site: http://Digis4Commits.com/
+Official site: http://DigiByteProjects.org/
 
 Development
 ===========
 
-To run Digis4Commits in development mode follow these instructions:
+To run DigiByteProjects in development mode follow these instructions:
 
 * Install [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
 
@@ -24,8 +24,8 @@ gem install bundler
 
 * Clone the repository
 ```
-git clone git@github.com:sigmike/Digis4Commits.git
-cd Digis4Commits
+git clone git@github.com:sigmike/DigiByteProjects.git
+cd DigiByteProjects
 ```
 
 * Install the sqlite3 development libraries
@@ -52,7 +52,7 @@ cp config/config.yml{.example,}
     bundle exec rake db:migrate
 ```
 
-* Make sure `ppcoind` is running with RPC enabled
+* Make sure `digibyte` is running with RPC enabled
 
 * Run the server
 
@@ -75,8 +75,6 @@ To retreive commits and send tips on project that do not hold tips:
 License
 =======
 
-[MIT License](https://github.com/sigmike/Digis4Commits/blob/master/LICENSE)
-
-Based on [Digis4Commits](http://Digis4Commits.com/), [MIT License](https://github.com/sigmike/Digis4Commits/blob/master/LICENSE), copyright (c) 2014 sigmike
+[MIT License](https://github.com/digibyte/DigiByteProjects/blob/master/LICENSE)
 
 Which is based on [Tip4commit](http://tip4commit.com/), [MIT License](https://github.com/tip4commit/tip4commit/blob/master/LICENSE), copyright (c) 2013-2014 tip4commit

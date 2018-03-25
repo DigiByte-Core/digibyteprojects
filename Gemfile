@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
-
+ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.0.2'
+gem 'rails', '4.2.10'
 
 # Databases
 gem 'pg', group: :postgresql
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails'
 gem 'haml-rails'
 gem "less-rails"
 
@@ -69,12 +69,13 @@ gem 'whenever'
 gem 'rqrcode-rails3'
 gem 'exception_notification'
 gem 'rack-canonical-host'
-gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
+gem 'bootstrap_form', '>= 2.7.0'
 gem 'html_pipeline_rails'
 gem 'rails_autolink'
 gem 'redcarpet'
 gem 'sanitize'
 gem 'twitter-typeahead-rails'
+gem 'commonmarker'
 gem 'commontator', '~> 4.6.0'
 gem 'compass-rails'
 

@@ -18,8 +18,8 @@ Feature: An user can create a project, linked with GitHub or not.
       """
     And the project should hold tips
     And the project single collaborators should be "seldon"
-    And the project address label should be "Digis4Commits-1"
-    And the project donation address should be the same as account "Digis4Commits-1"
+    And the project address label should be "DigiByteProjects-1"
+    And the project donation address should be the same as account "DigiByteProjects-1"
     And I should be on the project page
 
   Scenario: Create a project without name
@@ -56,11 +56,11 @@ Feature: An user can create a project, linked with GitHub or not.
 
     When I fill "Name" with "Project Foo"
     And I fill "Description" with "The foo project"
-    And I fill "GitHub URL" with "http://github.com/digibyte/Digis4Commits"
+    And I fill "GitHub URL" with "http://github.com/digibyte/DigiByteProjects"
     And I click on "Save"
     Then I should see "The project was created"
     And there should be a project "Project Foo"
-    And the GitHub name of the project should be "digibyte/Digis4Commits"
+    And the GitHub name of the project should be "digibyte/DigiByteProjects"
     And the project should hold tips
     And the project single collaborators should be "seldon"
 
@@ -74,7 +74,7 @@ Feature: An user can create a project, linked with GitHub or not.
 
     When I fill "Name" with "Project Foo"
     And I fill "Description" with "The foo project"
-    And I fill "GitHub URL" with "http://github.com/digibyte/Digis4Commits"
+    And I fill "GitHub URL" with "http://github.com/digibyte/DigiByteProjects"
     And I click on "Save"
     Then I should see "The project was created"
 
@@ -84,7 +84,7 @@ Feature: An user can create a project, linked with GitHub or not.
 
     When I fill "Name" with "Project Bar"
     And I fill "Description" with "The bar project"
-    And I fill "GitHub URL" with "http://github.com/digibyte/Digis4Commits"
+    And I fill "GitHub URL" with "http://github.com/digibyte/DigiByteProjects"
     And I click on "Save"
     Then I should see "The project was created"
 
@@ -118,7 +118,7 @@ Feature: An user can create a project, linked with GitHub or not.
       """
     And the project should hold tips
     And the project single collaborators should be "bob@example.com"
-    And the project address label should be "Digis4Commits-1"
-    And the project donation address should be the same as account "Digis4Commits-1"
+    And the project address label should be "DigiByteProjects-1"
+    And the project donation address should be the same as account "DigiByteProjects-1"
     And I should be on the project page
 

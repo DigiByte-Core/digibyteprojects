@@ -37,7 +37,7 @@ end
 
 Given(/^I add the user with email "(.*?)" through his identifier to the recipients$/) do |arg1|
   user = User.find_by(email: arg1)
-  within ".panel", text: "Digis4Commits user" do
+  within ".panel", text: "DigiByteProjects user" do
     find("input:enabled").set(user.identifier)
     click_on "Add"
   end

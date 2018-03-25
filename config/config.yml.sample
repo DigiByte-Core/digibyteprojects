@@ -43,4 +43,4 @@ address_versions: # 23/83 for digibyte, 111/196 for testnet, see base58.h
   - 30
   - 5
 
-# canonical_host: Digis4Commits.example.com # will redirect all other hostnames to this one
+# canonical_host: DigiByteProjects.example.com # will redirect all other hostnames to this one

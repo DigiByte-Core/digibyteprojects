@@ -1,9 +1,9 @@
-Digis4Commits FAQ
+DigiByteProjects FAQ
 ===============
 
-What is Digis4Commits?
+What is DigiByteProjects?
 --------------------
-Digis4Commits is a website where people raise funds for any kind of project with DigiByte.
+DigiByteProjects is a website where people raise funds for any kind of project with DigiByte.
 
 Anyone can start collecting funds in a few clicks. You just have to explain what you're going to do with the funds and why people can trust you.
 
@@ -11,13 +11,13 @@ People can easily donate to the projects they want to support by sending DigiByt
 
 How is it different than other crowdfunding sites?
 --------------------------------------------------
-On Digis4Commits the fundraiser is not expected to do the actual work. His or her job is to collect funds and distribute them to the people who work on the project. He may for example reward commits on an open source project or pay a lobbyist.
+On DigiByteProjects the fundraiser is not expected to do the actual work. His or her job is to collect funds and distribute them to the people who work on the project. He may for example reward commits on an open source project or pay a lobbyist.
 
 Why?
 ----
 The goal is give the initiative to the people, and not only to those who are able to achieve projects.
 
-For example imagine you want a feature in an open source software but the developers don't care about it and you can't implement it yourself. You can start a project on Digis4Commits to make it happen. If you get enough funds you can pay someone to implement the feature. There are many freelance developers and companies who will be happy to do that for you.
+For example imagine you want a feature in an open source software but the developers don't care about it and you can't implement it yourself. You can start a project on DigiByteProjects to make it happen. If you get enough funds you can pay someone to implement the feature. There are many freelance developers and companies who will be happy to do that for you.
 
 Or imagine you favorite band has given up. You can raise funds to pay them to work on a new album.
 
@@ -33,16 +33,16 @@ So we decided all these choices will be made by the fundraiser. He can start a p
 The fundraiser will also have the responsibility of deciding what can and cannot be changed. For example the main goal of the project is not likely to change. Even if you give a small amount and have an insignificant weight in the decisions you can rest assured that your money will still be used for the same goal. Someone who gave 90% of the funds won't be able to change that.
 
 
-Why use Digis4Commits and not send funds directly to the fundraiser?
+Why use DigiByteProjects and not send funds directly to the fundraiser?
 ------------------------------------------------------------------
 
-Digis4Commits provides tools to the donors and the fundraisers through the use of DigiByte as a currency with a focus on the DigiByte community.
+DigiByteProjects provides tools to the donors and the fundraisers through the use of DigiByte as a currency with a focus on the DigiByte community.
 
-The donors can browse the fundraiser history: what projects he managed, how he distributed funds, what comments he received, etc. The fundraisers are forced to distribute the funds through Digis4Commits so that anyone can see the details. For example if the fundraiser decided to send money to a GitHub account, then the GitHub account name will be displayed, not only the payment address.
+The donors can browse the fundraiser history: what projects he managed, how he distributed funds, what comments he received, etc. The fundraisers are forced to distribute the funds through DigiByteProjects so that anyone can see the details. For example if the fundraiser decided to send money to a GitHub account, then the GitHub account name will be displayed, not only the payment address.
 
-The fundraisers have tools to easily distribute money. They can for example send funds to an email address. Digis4Commits will take charge of getting payment information from the owner of this email address. They can also send funds to a GitHub users or to the author of a particular commit. More options will be added later (sending to a Reddit user, to a forum member, etc.).
+The fundraisers have tools to easily distribute money. They can for example send funds to an email address. DigiByteProjects will take charge of getting payment information from the owner of this email address. They can also send funds to a GitHub users or to the author of a particular commit. More options will be added later (sending to a Reddit user, to a forum member, etc.).
 
-We also provide tools to identify donors. When they donate they can provide a address. This address can be used whenever Digis4Commits, the fundraiser or anyone wants to identify a donor. Anyone able to sign with this address will be considered the sender of the associated money. This can be used to return the funds, to organize votes, to send rewards, etc.
+We also provide tools to identify donors. When they donate they can provide a address. This address can be used whenever DigiByteProjects, the fundraiser or anyone wants to identify a donor. Anyone able to sign with this address will be considered the sender of the associated money. This can be used to return the funds, to organize votes, to send rewards, etc.
 
 
 Can I trust the fundraisers?
@@ -52,7 +52,7 @@ Not blindly. You should do some researches before you give money.
 
 For example the fact a project has a lot of donations is not an indication that many people trust the fundraiser. He may have sent the money himself.
 
-Digis4Commits provides some tools to help you check the fundraiser. We keep track of all the projects he or she managed and all the funds he distributed. You can browse that and see how he managed previous projects. Anyone can comment the projects, distributions and users so if he did something wrong then there are good chances he received bad comments.
+DigiByteProjects provides some tools to help you check the fundraiser. We keep track of all the projects he or she managed and all the funds he distributed. You can browse that and see how he managed previous projects. Anyone can comment the projects, distributions and users so if he did something wrong then there are good chances he received bad comments.
 
 The fundraiser should also explain in the project description why you can trust him. If he doesn't do that you should be skeptical. Then you'll have to evaluate what he says. It's particularly important to check the identity of the fundraiser. He should provide proofs he really is who he claims to be.
 
@@ -64,11 +64,11 @@ Refund
 ------
 When you make a donation you explicitly give to the fundraiser the full control of the money you send. He or she may have committed themselves to refund the donations under certain circumstances but you still need to evaluate whether you can trust him on that.
 
-When you donate Digis4Commits asks you for a return address. This address will be used if the fundraiser wants to send funds back to you. It may also be used for other things where you need to prove you are the sender (a vote, a reward, etc.). All the donation addresses will be displayed publicly so you should use a newly generated address without history. And you must keep the associated private key in a safe place.
+When you donate DigiByteProjects asks you for a return address. This address will be used if the fundraiser wants to send funds back to you. It may also be used for other things where you need to prove you are the sender (a vote, a reward, etc.). All the donation addresses will be displayed publicly so you should use a newly generated address without history. And you must keep the associated private key in a safe place.
 
 Does it work?
 -------------
-Digis4Commits is young but has much potential.
+DigiByteProjects is young but has much potential.
 
 We initially started as a [tip4commit](http://tip4commit.com/) clone where GitHub commits were automatically rewarded 1% of the balance. We moved recently to the more generic system described here.
 
@@ -81,13 +81,13 @@ How can I raise funds?
 ----------------------
 Click on the <%= link_to '"Create a project"', new_project_path %> button. You'll have to fill a detailed description. Here are some recommendations:
 
-* State the main goal of your Digis4Commits project, and decide what can and cannot be changed for the project. The main goal cannot be changed.
+* State the main goal of your DigiByteProjects project, and decide what can and cannot be changed for the project. The main goal cannot be changed.
 * Provide your identity and convince donators why they should trust you.
 * Decide and state if you will be a benevolent dictator (more efficient), or create a more democratic project (finer control for stakeholders).
 * Describe your techical skills and other relevant qualifications if they are needed to evaluate the work made by others.
 * State policy of tipping for potential developers. Use other projects as templates or references.
 
-The project will be visible on Digis4Commits but it will not be particularly highlighted. You will have to communicate about it, that's part of your job.
+The project will be visible on DigiByteProjects but it will not be particularly highlighted. You will have to communicate about it, that's part of your job.
 
 
 Can fundraisers get paid for their work?
@@ -104,7 +104,7 @@ Check the policies of the projects. Fundraiser can chose to raise bounty or a sp
 
 How do I donate to a project I like?
 ------------------------------------
-Browse the project list and click on the "Donate" button. You will be asked for a personal address that will be used if Digis4Commits or the fundraiser ever needs to identify you. Then Digis4Commits will give you an address to which you just have to send DigiBytes. 99% of your donation will be available to the fundraiser. 1% will be kept to host Digis4Commits and pay the transaction fees.
+Browse the project list and click on the "Donate" button. You will be asked for a personal address that will be used if DigiByteProjects or the fundraiser ever needs to identify you. Then DigiByteProjects will give you an address to which you just have to send DigiBytes. 99% of your donation will be available to the fundraiser. 1% will be kept to host DigiByteProjects and pay the transaction fees.
 
 You can also donate without providing an address. But the fundraiser won't be able to return you the funds if he ever wants to. And if the fundraiser organizes a vote or send rewards, you won't be able to participate.
 
@@ -113,13 +113,13 @@ What's going to happen next?
 There are many features planed. Their achievement depends on the willingness of donors, fundraisers and developers.
 
 ### Bitcoin support
-Adding support for Bitcoin is an important step. We can easily change Digis4Commits to support projects either in Bitcoin or in DigiByte. But supporting multiple currecies in the same project will require more work and an external service to automatically convert currencies.
+Adding support for Bitcoin is an important step. We can easily change DigiByteProjects to support projects either in Bitcoin or in DigiByte. But supporting multiple currecies in the same project will require more work and an external service to automatically convert currencies.
 
 ### Multi-signature
 The most important imminent change is the introduction of multi-signature donation addresses:
 
 When you donate, your money will be sent to a multi-signature address:
-* 1 key will be owned by Digis4Commits,
+* 1 key will be owned by DigiByteProjects,
 * 1 key will be owned by the fundraiser and
 * 1 key will be owned by yourself (if you want to).
 
@@ -132,21 +132,21 @@ So if the website is hacked the funds can't be stolen. And the fundraiser cannot
 Also if a fundraiser is clearly misbehaving the website and the supporter can decide to return the funds. If the website itself is misbehaving (a very bad policy change, abandoned, hacked...) the fundraiser and the supporter can decide to move the funds elsewhere.
 
 ### Decentralization
-Digis4Commits can probably run completely decentralized, maybe on its own blockchain. But this will require a lot of thoughts. For now we focus on more practical things, but decentralization is certainly an ultimate goal.
+DigiByteProjects can probably run completely decentralized, maybe on its own blockchain. But this will require a lot of thoughts. For now we focus on more practical things, but decentralization is certainly an ultimate goal.
 
 Multi-signature will already be a big step toward decentralization.
 
 ### Other
 We will also improve the various tools provided by the website:
-* add new recipients the fundraisers can distribute funds to: all the people involved in a GitHub issue, another Digis4Commits project, a Reddit user, etc.
+* add new recipients the fundraisers can distribute funds to: all the people involved in a GitHub issue, another DigiByteProjects project, a Reddit user, etc.
 * project categorization, tags, sorting, filtering, etc.
 * browsing the history of projects (description changes, distribution changes, etc). The data are already there but just not displayed.
 * etc.
 
 
-What measures have been taken to secure the funds on Digis4Commits?
+What measures have been taken to secure the funds on DigiByteProjects?
 -----------------------------------------------------------------
 The project funds are isolated in different accounts in the wallet, so if someone ever finds a way to distribute more funds than the project balance, DigiByte will not take the funds from another project and will refuse the transaction. Projects with a high balance have a part of its funds moved to cold storage. The website runs in an isolated virtual server running only this service. There's an <%= link_to "audit page", audit_path %> that shows the status of all project accounts.
 
-When multisignatures are implemented Digis4Commits will not have direct the control over the funds (see above).
+When multisignatures are implemented DigiByteProjects will not have direct the control over the funds (see above).
 
