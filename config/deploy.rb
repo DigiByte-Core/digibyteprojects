@@ -1,5 +1,5 @@
-set :application, 't4c'
-set :repo_url, 'git@github.com:digibyte/DigiByteProjects.git'
+set :application, 'dgbprojects'
+set :repo_url, 'git@github.com:digibyte/digibyteprojects.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
