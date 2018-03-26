@@ -63,12 +63,11 @@ bundle exec rake db:migrate
 * Make sure `digibyted` is running with RPC enabled
 
 * Run the server
-
-
 bundle exec rails server
+```
 RAILS_ENV=production rake assets:precompile
-RAILS_ENV=production rails server --binding=0.0.0.0
-
+RAILS_ENV=production rails server --binding=0.0.0.0:443
+```
 * Connect to the server at http://localhost:3000/
 
 
