@@ -83,7 +83,7 @@ gem 'twitter-typeahead-rails'
 gem 'commonmarker'
 gem 'commontator', '~> 4.6.0'
 gem 'compass-rails'
-gem 'puma'
+gem 'thin'
 
 group :test do
   gem 'cucumber-rails', :require => false
